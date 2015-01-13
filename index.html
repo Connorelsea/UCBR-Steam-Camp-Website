@@ -35,10 +35,21 @@
     resources. Also contains meta information  to  help
     the site be found on Google.
 -->
+
+<!doctype html>
+<html lang="en-us">
+
 <head>
 
   <!-- Meta information -->
   <title>UCBR STEaM Camp</title>
+
+  <meta charset="UTF-8">
+  <meta name="keywords" content=" " />
+  <meta name="description" content=" " />
+  <meta name="author" content="Elsea Labs" />
+  <meta name="copyright" content="Elsea Labs &copy; 2015" />
+  <meta name="robot" content="noindex, nofollow" />
 
   <!-- Styling links -->
   <link rel="stylesheet" type="text/css" href="reset.css">
@@ -53,23 +64,46 @@
   </script>
 
 </head>
+<!--
+End of Head Block
+-->
 
 <body>
 
+<!--
+Header:
+  A fixed header featuring the logo  of  the  camp, the
+  Unitarian Universalist religious symbol, and the name
+  of our local church. It is fixed to the  top  of  the
+  screen and will change based on page size.
+-->
 <header>
+  <div class="bar"></div>
   <img class="logo" src="">
   <img class="church-logo" src="">
   <img class="church-name" src="">
-  <div class="bar"></div>
 </header>
+<!--
+End of Header
+-->
 
+<!--
+Content Section:
+  Contains the elements of the website, laid out using
+  logical formatting and  HTML  5  semantic  elements.
+  It also  acts  as  a  container  for  all  of  these
+  elements to help them respond to  the  fixed  header
+  and dynamic resizing that changes said header.
+-->
 <div class="content">
 
-  <article class="main">
-    <img class="main-image" src="">
+  <!-- The first/main image -->
+  <article class="bar bar-one">
+    <img class="image" src="">
   </article>
 
-  <article class="bar-one">
+  <!-- (Uppermost Parent Element) BAR TWO -->
+  <article class="bar bar-two">
 
     <!-- (Second to Parent) Inner-Bar, Acronym -->
     <section class="acronym-inner-bar"></section>
@@ -87,8 +121,8 @@
         </header>
 
         <!-- Camp Description -->
-        <section class="description">
-          <p>Does your child like discovering new things?  Solving problems?  Building?  Tinkering?  Finding out how and why things work?  Do you think your child needs a good mix of structured and un-structured educational play? <span class="important">If so, then this camp is for you.</span></p>
+        <section class="description">  Solving problems?  Building?  Tinkering?  Finding out how and
+          <p>Does your child like discovering new things? why things work?  Do you think your child needs a good mix of structured and un-structured educational play? <span class="important">If so, then this camp is for you.</span></p>
         </section>
 
         <!-- Questions -->
@@ -149,11 +183,33 @@
       <!-- End of Registration Box-->
 
     </section>
-    <<!-- End of (Second to Parent) Inner-Bar, Registration -->
+    <!-- End of (Second to Parent) Inner-Bar, Registration -->
 
   </article>
-  <!-- End of bar-one -->
+  <!-- End of (Uppermost Parent Element) BAR TWO -->
+
+  <!-- (Uppermost Parent Element) BAR THREE -->
+  <article class="bar bar-three">
+    <img class="image" src="">
+    <h2>Learn and gain friendship</h2>
+  </article>
+  <!-- End of (Uppermost Parent Element) BAR THREE -->
+
+  <!-- (Uppermost Parent Element) BAR FOUR -->
+  <article class="bar bar-four">
+    <section class="minor-block-one">Catapults, Robots, Electricity!</section>
+    <section class="major-block"><h3>Our goal is to create enthusiasm for science, art, and people in the world around us.</h3></section>
+    <section class="major-block-accent"></section>
+    <img class="chalice" src="">
+    <section class="minor-block-two">Arts, Water Day, 3D Modeling!</section>
+  </article>
+  <!-- End of (Uppermost Parent Element) BAR FOUR -->
 
 </div>
+<!--
+End of Content Block
+-->
 
 </body>
+
+</html>
