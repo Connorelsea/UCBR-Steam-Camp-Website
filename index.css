@@ -1,0 +1,73 @@
+/*
+
+Custom CSS by Elsea Labs
+
+See the source of the index.html page to
+view more information about the  company
+and its copyrights.
+
+*/
+
+
+/* 
+
+Header:
+  Overall header container
+
+*/
+
+.website-header {
+  position: fixed;
+
+  width:     100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  height:     20%;
+  max-height: 20%;
+  min-height: 20%;
+
+  background-color: black
+}
+
+/* Header: Red accent bar */
+
+.website-header .bar {
+  height:     15px;
+  max-height: 15px;
+  min-height: 15px;
+
+  background-color: #eb0c4b;
+}
+
+/* Header: Camp logo */
+
+.website-header .logo {
+  width:      25%;
+  max-width:  25%;
+  min-width:  25%;
+
+  padding-top: 3%;
+}
+
+/* Header: Church name */
+
+.website-header .church-name {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: white;
+}
+
+/* 
+
+Content:
+  Overall header container 
+
+*/
+
+.content: {
+  top: 200px;
+  position: absolute;
+}
