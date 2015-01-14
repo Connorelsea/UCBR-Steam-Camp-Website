@@ -8,6 +8,21 @@ and its copyrights.
 
 */
 
+/* On Document Load */
+
+$(document).ready(function() {
+
+	// Perform the same changes done on resize when
+	// the page is initially loaded.
+	
+	var logoHeight = $(".website-header .logo").css("height");
+	$(".website-header 	").css({
+		"height":logoHeight, "max-height":logoHeight, "min-height":logoHeight
+	});
+	$(".content").css("top", logoHeight);
+
+});
+
 /* On Resize */
 
 $(window).resize(function() {
@@ -22,7 +37,5 @@ $(window).resize(function() {
 		"height":logoHeight, "max-height":logoHeight, "min-height":logoHeight
 	});
 	$(".content").css("top", logoHeight);
-
-	console.log(logoHeight)
 
 });

@@ -27,7 +27,7 @@ Header:
   max-height: 20%;
   min-height: 20%;
 
-  background-color: black
+  background-color: white;
 }
 
 /* Header: Red accent bar */
@@ -67,7 +67,6 @@ Content:
 
 */
 
-.content: {
-  top: 200px;
+.content {
   position: absolute;
 }
