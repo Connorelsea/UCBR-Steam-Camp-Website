@@ -72,10 +72,23 @@ Header:
 
 .website-header .church-name {
   position: absolute;
-  right: 0;
-  top: 0;
 
-  color: white;
+  max-width:  500%;
+
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  display: none;
+
+  right: 15%;
+
+  color: #c7c7c7;
+}
+
+.website-header .church-logo {
+  position: absolute;
+  right: 2%;
 }
 
 /* 
