@@ -60,6 +60,7 @@ function positionHeader() {
 	if (parseFloat($(".website-header").css("width")) < 600)
 		$(".website-header .church-name").css({ "display":"none" })
 	else
-		$(".website-header .church-name").fadeIn(2000);
+		if ($(".website-header .church-name").css("display") == "none")
+			$(".website-header .church-name").fadeIn(2000);
 
 }

@@ -79,8 +79,6 @@ Header:
   font-weight: bold;
   text-transform: uppercase;
 
-  display: none;
-
   right: 15%;
 
   color: #c7c7c7;
@@ -111,4 +109,38 @@ Bar One:
 
 .bar-one .image {
   width: 100%;
+}
+
+/* 
+
+Bar Desc:
+  Description of acronym bar
+
+*/
+
+.bar-desc {
+  text-align: center;
+
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+
+  background-color: #eb0c4b;
+}
+
+.bar-desc ul li {
+  display: inline-block;
+  margin: 1% 4%;
+}
+
+/* 
+
+Bar Two:
+  Contains information about the camp
+
+*/
+
+.bar-two {
+  background-color: #7f0a2b;
 }
