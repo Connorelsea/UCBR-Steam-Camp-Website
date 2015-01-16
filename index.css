@@ -109,6 +109,9 @@ Bar One:
 
 .bar-one .image {
   width: 100%;
+  
+  /* QUICK FIX FOR LINE HEIGHT ERROR */
+  margin-bottom: -3px;
 }
 
 /* 
