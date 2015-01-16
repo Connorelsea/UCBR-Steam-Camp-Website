@@ -38,6 +38,9 @@ function positionHeader() {
 
 	var logoHeight = parseFloat($(".website-header .logo").css("height"));
 
+	// Ensure that the height does not get  huge  on
+	// wide displays
+
 	if (logoHeight >= 120) logoHeight = 120;
 
 	$(".website-header").css({
@@ -58,6 +61,9 @@ function positionHeader() {
 	});
 
 	$(".website-header .church-name").css({ "top":wordHeight });
+
+	// Remove or add the church name accordingly
+	// based on the width of the page
 
 	if (parseFloat($(".website-header").css("width")) < 600)
 		$(".website-header .church-name").css({ "display":"none" })
