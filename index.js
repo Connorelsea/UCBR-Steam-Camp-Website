@@ -38,7 +38,9 @@ function positionHeader() {
 
 	var logoHeight = parseFloat($(".website-header .logo").css("height"));
 
-	$(".website-header 	").css({
+	if (logoHeight >= 120) logoHeight = 120;
+
+	$(".website-header").css({
 		"height":logoHeight, "max-height":logoHeight, "min-height":logoHeight
 	});
 	$(".content").css("top", logoHeight);

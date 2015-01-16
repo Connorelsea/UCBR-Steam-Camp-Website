@@ -68,6 +68,16 @@ Header:
   padding-top: 3%;
 }
 
+@media only screen  and (min-width : 970px) {
+
+  .website-header .logo {
+    width:      235px;
+    max-width:  235px;
+    min-width:  235px;
+  }
+
+}
+
 /* Header: Church name */
 
 .website-header .church-name {
@@ -109,7 +119,7 @@ Bar One:
 
 .bar-one .image {
   width: 100%;
-  
+
   /* QUICK FIX FOR LINE HEIGHT ERROR */
   margin-bottom: -3px;
 }
