@@ -8,6 +8,23 @@ and its copyrights.
 
 */
 
+/*
+
+Custom Defined Font Faces
+
+*/
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: thin;
+  src: url("helv-light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: bold;
+  src: url("helv-bold.otf") format("opentype");
+}
 
 /* 
 
@@ -18,6 +35,7 @@ Header:
 
 .website-header {
   position: fixed;
+  z-index: 10;
 
   width:     100%;
   max-width: 100%;
@@ -69,4 +87,15 @@ Content:
 
 .content {
   position: absolute;
+}
+
+/* 
+
+Bar One:
+  Contains the first website image
+
+*/
+
+.bar-one .image {
+  width: 100%;
 }
