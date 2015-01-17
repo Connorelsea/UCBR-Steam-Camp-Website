@@ -171,6 +171,8 @@ Description Box:
   width: 50%;
   max-width: 50%;
 
+  font-family: Helvetica;
+
   float: left;
 }
 
@@ -217,7 +219,50 @@ Registration Box:
   width: 50%;
   max-width: 50%;
 
+  font-family: Helvetica;
+
   float: left;
+}
+
+.registration-box .button-container {
+  padding: 20px;
+}
+
+.registration-box .button-container .button {
+  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
+
+  display: block;
+
+  padding: 20px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 180%;
+  text-decoration: none;
+  color: white;
+
+  background-color: #eb0c4b;
+}
+
+.registration-box .information {
+  width: 100%;
+}
+
+/* Force sections to display side by side */
+.registration-box .information section {
+  display: inline-block;
+}
+
+.registration-box .information .date {
+  padding-left: 5%;
+  float: left;
+}
+
+.registration-box .information .age {
+  padding-right: 5%;
+  float: right;
 }
 
 /*
