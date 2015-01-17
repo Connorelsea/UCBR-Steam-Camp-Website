@@ -284,6 +284,31 @@ Registration Box:
   float: right;
 }
 
+/*
+
+Change  the  columns  position  when 
+the screen size changes to a smaller
+view 
+
+*/
+
+@media only screen  and (max-width : 760px) {
+
+  .description-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .registration-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 372px;
+
+    display: block;
+  }
+
+}
+
 /* Two columns of camp activities */
 
 .registration-box .activities {
