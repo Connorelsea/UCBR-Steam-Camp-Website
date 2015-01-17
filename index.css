@@ -154,6 +154,81 @@ Bar Two:
 
 */
 
+
 .bar-two {
+  color: white;
   background-color: #7f0a2b;
+}
+
+/* 
+
+Description Box:
+  Contains information about the camp
+
+*/
+
+.description-box {
+  width: 50%;
+  max-width: 50%;
+
+  float: left;
+}
+
+.description-box header h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 280%;
+
+  padding: 0 5%;
+  padding-top: 5%;
+}
+
+.description-box .description {
+  font-family: Helvetica;
+  font-weight: thin;
+  font-size: 100%;
+
+  padding: 0 5%;
+  padding-top: 5%;
+}
+
+.description-box .questions {
+  font-family: Helvetica;
+  font-weight: thin;
+  font-size: 100%;
+
+  padding: 0 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.description-box .questions h3 {
+  font-weight: bold;
+  display: inline-block;
+}
+/* 
+
+Registration Box:
+  Contains information about registration
+
+*/
+
+.registration-box {
+  width: 50%;
+  max-width: 50%;
+
+  float: left;
+}
+
+/*
+
+Clear Fix
+
+*/
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
 }
