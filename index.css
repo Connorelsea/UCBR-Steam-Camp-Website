@@ -160,6 +160,18 @@ Bar Two:
   background-color: #7f0a2b;
 }
 
+@media only screen  and (min-width : 1000px) {
+
+  .registration-inner-bar {
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 1000px;
+
+    margin: 0 auto;
+  }
+
+}
+
 /* 
 
 Description Box:
@@ -188,10 +200,14 @@ Description Box:
 .description-box .description {
   font-family: Helvetica;
   font-weight: thin;
-  font-size: 100%;
+  font-size: 106%;
 
   padding: 0 5%;
   padding-top: 5%;
+}
+
+.description-box .description .important {
+  font-weight: bold;
 }
 
 .description-box .questions {
@@ -235,7 +251,7 @@ Registration Box:
 
   display: block;
 
-  padding: 20px;
+  padding: 15px;
   margin: 0 auto;
 
   font-weight: bold;
@@ -262,6 +278,34 @@ Registration Box:
 
 .registration-box .information .age {
   padding-right: 5%;
+
+  font-weight: bold;
+
+  float: right;
+}
+
+/* Two columns of camp activities */
+
+.registration-box .activities {
+  width: 100%;
+}
+
+.registration-box .activities .col li {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.registration-box .activities .col-one {
+  padding-left: 5%;
+  padding-top: 5%;
+
+  float: left;
+}
+
+.registration-box .activities .col-two {
+  padding-right: 5%;
+  padding-top: 5%;
+
   float: right;
 }
 
