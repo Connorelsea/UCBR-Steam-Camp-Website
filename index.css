@@ -26,6 +26,12 @@ Custom Defined Font Faces
   src: url("helv-bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Damion;
+  font-weight: normal;
+  src: url("damion.ttf") format("truetype");
+}
+
 /* 
 
 Header:
@@ -120,6 +126,10 @@ Bar One:
 .bar-one .image {
   width: 100%;
 
+  height: auto;
+  max-height: auto;
+  min-height: auto;
+
   /* QUICK FIX FOR LINE HEIGHT ERROR */
   margin-bottom: -3px;
 }
@@ -191,7 +201,7 @@ Description Box:
 .description-box header h1 {
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 280%;
+  font-size: 260%;
 
   padding: 0 5%;
   padding-top: 5%;
@@ -245,6 +255,11 @@ Registration Box:
 }
 
 .registration-box .button-container .button {
+
+  opacity: .99; /* stupid z-index fix */
+
+  z-index: 1;
+
   width: 90%;
   max-width: 90%;
   min-width: 90%;
@@ -255,11 +270,19 @@ Registration Box:
   margin: 0 auto;
 
   font-weight: bold;
-  font-size: 180%;
+  font-size: 209%;
   text-decoration: none;
   color: white;
 
   background-color: #eb0c4b;
+}
+
+.registration-box .button-container .button:hover {
+    background-color: #b11a44;
+}
+
+.registration-box .button-container .button img {
+  float: right;
 }
 
 .registration-box .information {
@@ -282,6 +305,59 @@ Registration Box:
   font-weight: bold;
 
   float: right;
+}
+
+/* BUTTON HOVER */
+
+.registration-box .expand {
+
+  display: none;
+
+  z-index: 0;
+
+  position: absolute;
+
+  display: block;
+
+  padding: 15px;
+  margin: 0 auto;
+
+  background-color: #eb0c4b;
+  background-color: white;
+}
+
+.registration-box .expand .choice {
+
+  float: left;
+
+  font-size: 25px;
+
+  color: white;
+  display: inline;
+  background-color: #eb0c4b;
+
+  padding: 10px;
+  margin: 8px;
+
+  height: 90%;
+  max-height: 70%;
+  min-height: 70%;
+
+  width: 40%;
+  max-width: 40%;
+  min-width: 40%;
+}
+
+.registration-box .expand .choice:hover {
+  background-color: #b11a44;
+}
+
+.registration-box .expand .choice span {
+  font-weight: bold;
+}
+
+.registration-box .expand .choice .arrow {
+    position: absolute;
 }
 
 /*
@@ -345,4 +421,266 @@ Clear Fix
    display: block; 
    height: 0; 
    clear: both;
+}
+
+.bar-three {
+  width: 100%;
+}
+
+.bar-three .image {
+  width: 100%;
+}
+
+/*
+
+REMOVED FEATURE, NOT ENOUGH TIME TO COMPLETE
+
+.bar-three .header {
+  position: relative;
+  width: 100%;
+  bottom: 300px;
+}
+
+.bar-three .header h2 {
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+}
+
+@media only screen  and (max-width : 860px) {
+
+  .bar-three .header {
+    display: none;
+  }
+
+}
+*/
+
+/*
+Bar Four: shout-outs
+*/
+
+.bar-four {
+  width: 100%;
+  background-color: #eb0c4b;
+  margin-top: -3px;
+}
+
+.bar-four .major-block {
+  float: left;
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.6em;
+  padding: 30px;
+  width: 60%;
+}
+
+/*
+Bar Four: Registration call-to-action #2
+*/
+
+.bar-five {
+  position: relative;
+}
+
+.bar-five .image {
+  position: relative;
+  width:     100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.bar-five .registration {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+
+  width:     30%;
+  max-width: 300px;
+  min-width: 250px;
+
+  height: 300px;
+
+  float: left;
+  background-color: rgba(127, 10, 43, .4);
+
+/*  opacity: 0.6;
+  filter: alpha(opacity=60); */
+
+  font-weight: bold;
+  color: white;
+}
+
+.bar-five .inner-box {
+  padding: 10px;
+}
+
+.bar-five h1 {
+  font-family: Helvetica;
+  font-size: 2em;
+}
+
+.bar-five h3 {
+  font-family: Damion;
+  position: relative;
+  bottom: 40px;
+  font-size: 6em;
+
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+
+  float: right;
+}
+
+.bar-five .button {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+
+  height: 20%;
+
+  font-size: 1.7em;
+
+  font-family: Helvetica;
+  color: white;
+
+  padding: 10px;
+
+  text-decoration: none;
+
+  background-color: #eb0c4b;
+  width: 90%;
+
+}
+
+.bar-five .button:hover {
+    background-color: #b11a44;
+}
+
+.bar-five .text {
+    vertical-align: middle;
+}
+
+/*
+
+Bar Six: Oh god so many bars why me
+
+*/
+
+.bar-six {
+  position: relative;
+  background-color: white;
+  height: 100px;
+
+  font-family: Helvetica;
+  color: gray;
+}
+
+.bar-six .accent {
+margin-top: -3px;
+  background-color: #eb0c4b;
+  height: 20px;
+}
+
+.bar-six .address {
+  position: absolute;
+  right: 0px;
+}
+
+.bar-six .buttons {
+  position: absolute;
+  left: 0px;
+  padding: 10px;
+  display: block;
+}
+
+.bar-six * {
+  padding: 2px;
+  display: block;
+}
+
+/* 
+
+Header:
+  Overall header container
+
+*/
+
+.website-footer {
+
+  margin: -3px;
+  position: relative;
+  z-index: 10;
+
+  width:     100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  height:     20%;
+  max-height: 20%;
+  min-height: 20%;
+
+  background-color: white;
+}
+
+/* Header: Red accent bar */
+
+.website-footer .bar {
+  height:     15px;
+  max-height: 15px;
+  min-height: 15px;
+
+  background-color: #eb0c4b;
+}
+
+/* Header: Camp logo */
+
+.website-footer .logo {
+  width:      300px;
+  max-width:  300px;
+  min-width:  300px;
+
+  padding-top: 2%;
+}
+
+/* Header: Church name */
+
+.website-footer .church-name {
+  position: absolute;
+
+  top: 40px;
+  right: 30px;
+
+  max-width:  500%;
+
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #c7c7c7;
+}
+
+.website-footer .button {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #eb0c4b;
+}
+
+.website-footer .elsea-logo {
+  padding: 20px;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.website-footer .elsea-logo img {
+  min-width: 80px; 
+  max-width: 80px;
+  display: inline;
 }
